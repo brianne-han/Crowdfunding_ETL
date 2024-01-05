@@ -1,14 +1,14 @@
 ﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
-
+drop table if exists "Campaign"
 CREATE TABLE "Campaign" (
     "cf_id" INTEGER   NOT NULL,
     "contact_id" INTEGER   NOT NULL,
     "company" VARCHAR(50)   NOT NULL,
     "description" VARCHAR(225)   NOT NULL,
-    "goal" INTEGER   NOT NULL,
-    "pledged" INTEGER   NOT NULL,
+    "goal" REAL   NOT NULL,
+    "pledged" REAL  NOT NULL,
     "outcome" VARCHAR(50)   NOT NULL,
     "backers_count" INTEGER   NOT NULL,
     "country" VARCHAR(50)   NOT NULL,
